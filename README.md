@@ -1,4 +1,4 @@
-<img width="1280" height="618" alt="image" src="https://github.com/user-attachments/assets/021ce1e0-7263-4ab8-a6ff-ef578ea84193" /># Telegram Motivation Bot (n8n)
+# Telegram Motivation Bot (n8n)
 
 An **automation built with n8n** that delivers a daily dose of positivity ✨  
 Every morning at **7:00 AM IST**, this bot fetches a motivational quote from the [ZenQuotes API](https://zenquotes.io/) and shares it with a Telegram chat/channel.
@@ -29,26 +29,27 @@ Every morning at **7:00 AM IST**, this bot fetches a motivational quote from the
 ## 🚀 Setup Guide
 
 ### 1. Clone this repository
+
 ```bash
 git clone https://github.com/manusri06/telegram-motivation-bot-n8n.git
-2. Import the workflow into n8n
+Import the workflow into n8n
 Open your n8n editor (self-hosted or cloud)
 
 Go to Workflows → Import from File
 
 Select workflow.json
 
-3. Configure environment
+Configure environment
 Update these values in the workflow:
 
 Telegram Bot Token (from @BotFather)
 
 Chat ID (channel or group ID where messages should be sent)
 
-4. Activate workflow
+Activate workflow
 Enable the workflow in n8n ✅
 At 7 AM IST, your Telegram chat will receive an inspiring quote!
 
 📸 Workflow Preview
 Here’s how the automation looks in n8n:
-<img width="1389" height="665" alt="image" src="https://github.com/user-attachments/assets/1433682e-dab5-4d7d-b6ad-6c949b3890db" />
+<img width="1376" height="667" alt="image" src="https://github.com/user-attachments/assets/65b414f6-1c92-4e28-8af9-c0194aa46459" />
