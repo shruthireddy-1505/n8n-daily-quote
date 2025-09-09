@@ -51,7 +51,5 @@ At 7 AM IST, your Telegram chat will receive an inspiring quote!
 📸 Workflow Preview
 Here’s how the automation looks in n8n:
 
+<img width="1445" height="697" alt="image" src="https://github.com/user-attachments/assets/be7b5096-27b7-48b6-835c-9e00268852c0" />
 
-git add README.md image.png
-git commit -m "Updated README with workflow preview image"
-git push origin main
