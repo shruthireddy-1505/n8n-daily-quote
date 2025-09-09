@@ -8,7 +8,7 @@ Every morning at **7:00 AM IST**, this bot fetches a motivational quote from the
 ## 🌟 Features
 - 🕖 **Daily schedule** → Runs automatically every day at 7 AM IST  
 - 💬 **Telegram integration** → Sends quotes directly to a chat or channel  
-- 📜 **Fresh quotes** → Pulled from ZenQuotes API  
+- 📜 **Fresh quotes** → Pulled from ZenQuotes API   
 - ⚡ **Low-code automation** → Fully built using [n8n](https://n8n.io/)  
 
 ---
@@ -29,9 +29,9 @@ Every morning at **7:00 AM IST**, this bot fetches a motivational quote from the
 ## 🚀 Setup Guide
 
 
-```bash
+
 ### 1. Clone this repository
-git clone https://github.com/manusri06/telegram-motivation-bot-n8n.git
+git clone https://github.com/shruthireddy-1505/n8n-daily-quote.git
 2. Import the workflow into n8n
 Open your n8n editor (self-hosted or cloud)
 Go to Workflows → Import from File
@@ -48,8 +48,10 @@ Chat ID (channel or group ID where messages should be sent)
 Enable the workflow in n8n ✅
 At 7 AM IST, your Telegram chat will receive an inspiring quote!
 
-📸 Workflow Preview
+
+📸 Workflow Preview  
 Here’s how the automation looks in n8n:
+
 ![Workflow Preview](image.png)
 
 
