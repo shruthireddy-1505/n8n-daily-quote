@@ -1,0 +1,106 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 7,
+              "triggerAtMinute": 30
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -64,
+        0
+      ],
+      "id": "07e65d96-32f0-437c-9917-ac45e1fb043a",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.telegram.org/bot8420723168:AAFtgdaozT16t0soEk6ElXJq2phEj3RXk_4/sendMessage",
+        "sendBody": true,
+        "contentType": "=json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "chat_id",
+              "value": "6846191406"
+            },
+            {
+              "name": "text",
+              "value": "={{ $node[\"HTTP Request1\"].json[\"q\"] }} — {{ $node[\"HTTP Request1\"].json[\"a\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        448,
+        0
+      ],
+      "id": "70698425-9fb6-4d65-9947-f0d05996b692",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "url": "https://zenquotes.io/api/random",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "8d351380-ccdb-4d37-8c2d-fe513a1751b7",
+      "name": "HTTP Request1"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Kolkata",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "versionId": "66432546-59fb-4cde-a6fa-159cefe29dd1",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "305af4fa5b77c70d60a6856a955d04b38a0cc558fe4b1f1b271355a9096f5dff"
+  },
+  "id": "HIObmhxtfKtzL3P3",
+  "tags": []
+}
