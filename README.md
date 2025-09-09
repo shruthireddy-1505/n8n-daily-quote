@@ -28,9 +28,9 @@ Every morning at **7:00 AM IST**, this bot fetches a motivational quote from the
 
 ## 🚀 Setup Guide
 
-### 1. Clone this repository
 
 ```bash
+### 1. Clone this repository
 git clone https://github.com/manusri06/telegram-motivation-bot-n8n.git
 2. Import the workflow into n8n
 Open your n8n editor (self-hosted or cloud)
@@ -50,6 +50,6 @@ At 7 AM IST, your Telegram chat will receive an inspiring quote!
 
 📸 Workflow Preview
 Here’s how the automation looks in n8n:
+![Workflow Preview](image.png)
 
-<img width="1445" height="697" alt="image" src="https://github.com/user-attachments/assets/be7b5096-27b7-48b6-835c-9e00268852c0" />
 
