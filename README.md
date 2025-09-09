@@ -32,24 +32,26 @@ Every morning at **7:00 AM IST**, this bot fetches a motivational quote from the
 
 ```bash
 git clone https://github.com/manusri06/telegram-motivation-bot-n8n.git
-Import the workflow into n8n
+2. Import the workflow into n8n
 Open your n8n editor (self-hosted or cloud)
-
 Go to Workflows → Import from File
-
 Select workflow.json
 
-Configure environment
+3. Configure environment
 Update these values in the workflow:
 
 Telegram Bot Token (from @BotFather)
 
 Chat ID (channel or group ID where messages should be sent)
 
-Activate workflow
+4. Activate workflow
 Enable the workflow in n8n ✅
 At 7 AM IST, your Telegram chat will receive an inspiring quote!
 
 📸 Workflow Preview
 Here’s how the automation looks in n8n:
-<img width="1376" height="667" alt="image" src="https://github.com/user-attachments/assets/65b414f6-1c92-4e28-8af9-c0194aa46459" />
+
+
+git add README.md image.png
+git commit -m "Updated README with workflow preview image"
+git push origin main
